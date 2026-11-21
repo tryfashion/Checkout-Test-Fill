@@ -1,0 +1,24 @@
+# Local dependencies and generated files
+node_modules/
+.npm-cache/
+.guide-tools/
+release/
+INSTALL_THIS_EXTENSION_v*/
+scripts/__pycache__/
+*.pyc
+*.zip
+*.crx
+*.tar.gz
+
+# Signing keys and local settings
+.private/
+*.pem
+*.key
+.env
+.env.*
+
+# The LeoShopKit website has its own repository
+leoshopkit/
+
+# Local screenshot outside the store listing assets
+jietu1.png

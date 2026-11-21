@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Checkout Test Fill" },
+  "extDescription": { "message": "Fill US test contact details, addresses, and optional test card fields on checkout pages." }
+}

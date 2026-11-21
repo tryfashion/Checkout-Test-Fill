@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Checkout 測試資料填充" },
+  "extDescription": { "message": "在 checkout 頁面一鍵填入美國測試聯絡資訊、地址與可選測試卡資料。" }
+}

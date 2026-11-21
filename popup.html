@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+  <title>Checkout Test Fill</title>
+</head>
+<body>
+  <h1 data-i18n="popupTitle"></h1>
+  <p id="status" data-i18n="checking"></p>
+  <button id="fill" type="button" data-i18n="generateAndFill"></button>
+  <h2 data-i18n="settings"></h2>
+  <label for="uiLanguage" data-i18n="languageLabel"></label>
+  <select id="uiLanguage">
+    <option value="auto" data-i18n="languageAuto"></option>
+    <option value="en" data-i18n="languageEnglish"></option>
+    <option value="zh_CN" data-i18n="languageSimplified"></option>
+    <option value="zh_TW" data-i18n="languageTraditional"></option>
+  </select>
+  <label for="country" data-i18n="country"></label>
+  <select id="country"><option value="US">United States</option></select>
+  <label for="state" data-i18n="state"></label>
+  <select id="state"></select>
+  <p class="hint" data-i18n="stateHint"></p>
+  <h2 data-i18n="stripeCards"></h2>
+  <label class="checkbox"><input id="cardEnabled" type="checkbox" checked><span data-i18n="autoCard"></span></label>
+  <label for="cardNumber" data-i18n="cardNumber"></label>
+  <select id="cardNumber" size="3"></select>
+  <div class="card-actions">
+    <button id="moveUp" class="secondary" type="button" data-i18n="moveUp"></button>
+    <button id="moveDown" class="secondary" type="button" data-i18n="moveDown"></button>
+    <button id="removeCard" class="secondary" type="button" data-i18n="remove"></button>
+  </div>
+  <label for="customCard" data-i18n="customCard"></label>
+  <input id="customCard" type="text" inputmode="numeric" data-i18n-placeholder="customCardPlaceholder">
+  <div class="card-actions two">
+    <button id="addCard" class="secondary" type="button" data-i18n="addCard"></button>
+    <button id="sortCards" class="secondary" type="button" data-i18n="sortCards"></button>
+  </div>
+  <label for="expiryYears" data-i18n="expiryYears"></label>
+  <input id="expiryYears" type="number" min="1" max="10" value="2">
+  <label for="cardCvc" data-i18n="cvc"></label>
+  <input id="cardCvc" type="text" inputmode="numeric" maxlength="4" value="234">
+  <p class="hint" data-i18n="cardHint"></p>
+  <button id="save" class="secondary" type="button" data-i18n="save"></button>
+  <p class="hint" data-i18n="emailHint"></p>
+  <p class="small" data-i18n="usageHint"></p>
+  <p class="small"><a href="privacy.html" target="_blank" data-i18n="privacyLink"></a> · <span data-i18n="localOnly"></span></p>
+  <button id="clearData" class="secondary" type="button" data-i18n="clearData"></button>
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
